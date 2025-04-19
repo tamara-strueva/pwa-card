@@ -82,3 +82,14 @@ function promptInstall() {
         });
     }
 }
+
+// Показываем уведомление при потере соединения
+window.addEventListener('offline', () => {
+    console.log('Вы в оффлайн-режиме');
+    // Можно показать toast-уведомление
+});
+
+// Проверяем статус при загрузке
+if (!navigator.onLine) {
+    console.log('Приложение запущено в оффлайн-режиме');
+}
