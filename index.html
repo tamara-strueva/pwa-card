@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя визитка</title>
+    <meta name="theme-color" content="#4a148c">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/icon-192x192.png">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="images/photo.jpg" alt="Моя фотография" class="photo">
+            <h1>Струева Тамара</h1>
+            <p>Студентка группы ПИ21-2в</p> 
+            <div class="buttons">
+                <button id="phoneBtn">Телефон</button>
+                <button id="telegramBtn">Telegram</button>
+                <button id="vkBtn">VK</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальное окно для QR-кода -->
+    <div id="qrModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <img id="qrImage" src="" alt="QR-код">
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
